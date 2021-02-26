@@ -99,7 +99,6 @@ router.route('/movies')
         if (req.get('Content-Type')) {
         res = res.type(req.get('Content-Type'));
     }
-        //res.json ({msg:'movie saved'});
         var o = getJSONObjectForMovieRequirement(req);
         res.json(o);
     })
@@ -109,7 +108,6 @@ router.route('/movies')
         if (req.get('Content-Type')) {
             res = res.type(req.get('Content-Type'));
         }
-        //res.json ({msg:'GET movies'});
         var o = getJSONObjectForMovieRequirement(req);
         res.json(o);
     });
